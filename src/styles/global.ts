@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  /* ========= Montserrat ========= */
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -28,6 +29,44 @@ const GlobalStyles = createGlobalStyle`
         url('/fonts/montserrat-v15-latin-600.woff2') format('woff2');
   }
 
+  /* ========= Inter ========= */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/inter-v3-latin-regular.woff2') format('woff2'),
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/inter-v3-latin-500.woff2') format('woff2'),
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/inter-v3-latin-600.woff2') format('woff2'),
+  }
+
+  /* ========= Rajdhani =========*/
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/rajdhani-v10-latin-600.woff2') format('woff2'),
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -37,20 +76,28 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* html, body, #__next {
-    height: 100%;
-  } */
-
   ${({ theme }) => css`
     html {
-      font-size: 62.5%;
+      font-size: 62.5%; // 1.6rem === 16px
+    }
+
+    @media (max-width: 1080px) {
+      html {
+        font-size: 58.59%; // 1rem === 15px
+      }
+    }
+
+    @media (max-width: 720px) {
+      html {
+        font-size: 54.68%; // 1rem === 14px
+      }
     }
 
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
-      background-color: #0c0f16;
-      -webkit-font-smoothing: antialiased !important;
+      background-color: ${theme.colors.background};
+      color: ${theme.colors.text};
     }
   `}
 

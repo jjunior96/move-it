@@ -1,6 +1,6 @@
 export default {
   grid: {
-    container: '130rem',
+    container: '96rem',
     gutter: '3.2rem'
   },
   border: {
@@ -11,6 +11,7 @@ export default {
       "Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
     normal: 400,
+    semiBold: 500,
     bold: 600,
     sizes: {
       xsmall: '1.2rem',
@@ -23,16 +24,17 @@ export default {
     }
   },
   colors: {
-    primary: '',
-    secondary: '',
-    mainBg: '',
-    lightBg: '',
-    white: '',
-    black: '',
-    lightGray: '',
-    gray: '',
-    darkGray: '',
-    red: ''
+    white: '#fff',
+    background: '#f2f3f5',
+    grayLine: '#dcdde0',
+    text: '#666',
+    textHighlight: '#b3b9ff',
+    title: '#2e384d',
+    red: '#e83f5b',
+    green: '#4cd62b',
+    blue: '#5965e0',
+    blueDark: '#4953b8',
+    blueTwitter: '#2aa9e0'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -49,9 +51,5 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
-  },
-  transition: {
-    default: '0.3s ease-in-out',
-    fast: '0.1s ease-in-out'
   }
 } as const;
