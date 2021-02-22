@@ -1,21 +1,26 @@
 {
-  "name": "App name",
-  "short_name": "APP",
+  "name": "Move it",
+  "short_name": "Move it",
   "icons": [
     {
-      "src": "/img/bg.png",
+      "src": "/img/icon64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/img/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/bg.png",
+      "src": "/img/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "background_color": "#0c0f16",
-  "description": "App PWA",
+  "background_color": "#5965E0",
+  "description": "Move it",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#0c0f16"
+  "theme_color": "#5965E0"
 }
