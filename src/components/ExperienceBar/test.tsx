@@ -1,16 +1,15 @@
 import { render, screen } from '@testing-library/react';
 
-import Main from '.';
+import ExperienceBar from '.';
 
-describe('<Main />', () => {
+describe('<ExperienceBar />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<ExperienceBar />);
 
     expect(
-      screen.getByRole('heading', { name: /app name/i })
+      screen.getByRole('heading', { name: /ExperienceBar/i })
     ).toBeInTheDocument();
 
-    // Snapshot
     expect(container.firstChild).toMatchSnapshot();
   });
 });
