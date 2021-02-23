@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.header`
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 2.4rem 2rem;
 `;
 
 export const TextXp = styled.span`
