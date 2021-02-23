@@ -17,8 +17,8 @@
 
 <h1 align="center">Índice</h1>
 
-[Screenshots](#screenshots)  | [Estrutura de Projeto](#estrutura-do-projeto)  | [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias)  |  [Features](#features-implementadas)  |
-:-------:                  | ------:                                        |:-------:                 | ------:                             | ------:
+[Screenshots](#screenshots)  | [Estrutura de Projeto](#estrutura-do-projeto)  | [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias)  |  [Features](#features-implementadas)  |  [Deploy](#deploy)
+:-------:                  | ------:                                        |:-------:                 | ------:                             | ------:                               | ------:
 
 ## Screenshots
 
@@ -52,7 +52,11 @@ yarn start
 ## Features Implementadas
 
 - Frontend:
-  - [x] Criação de classes (Professor/aula/horários disponíveis);
-  - [x] Listagem de classes;
-  - [x] Criador de Conexões;
-  - [x] Listagem de conexões.
+  - [x] Criação dos componentes base
+  - [x] Criação do Countdown;
+  - [ ] Criação do Dark Mode;
+  - [ ] Criação da contagem de XP;
+  - [X] Deploy;
+
+## Deploy
+A aplicação está disponível no endereço [https://move-it-app.vercel.app/](https://move-it-app.vercel.app/).
