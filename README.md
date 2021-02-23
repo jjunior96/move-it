@@ -1,47 +1,58 @@
-A TypeScript starter for Next.js that includes all you need to build amazing projects 🔥
+<!--
+*** Obrigado por estar vendo o nosso README!
+*** Se você tiver alguma sugestão que possa melhorá-lo, dê um fork no repositório e crie uma Pull Request
+*** ou abra uma Issue com a tag "sugestão". :D
+-->
 
-- 📏 **ESLint** — Pluggable JavaScript linter
-- 💖 **Prettier** - Opinionated Code Formatter
-- 🐶 **Husky** — Use git hooks with ease
-- 🚫 **lint-staged** - Run linters against staged git files
-- 🐙 **React Testing Library (RTL)** - Builds by adding APIs for working with React components
-- 🃏 **Jest** - A delightful JavaScript Testing Framework with a focus on simplicity
-- 💅 **Styled Components (with SSR)** - Use the best bits of ES6 and CSS to style your apps without stress
+<p align="center">
+<img src="https://user-images.githubusercontent.com/30422190/108911281-d5dee200-7605-11eb-9e32-e25b81b47f02.png" width="320px"/>
+<p align="center"><i>Move it</i></p>
+</p>
 
-### Other libs
-- **Axios**
-- **Polished**
-- **React-Spring**
-- **Unform**
-- **UUID**
-- **Yup**
+<p align="center">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jjunior96/move-it?color=%235965E0">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jjunior96/move-it?color=%235965E0&logoColor=%235965E0" />
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jjunior96/move-it?color=%235965E0">
+</p>
+
+<h1 align="center">Índice</h1>
+
+[Screenshots](#screenshots)  | [Estrutura de Projeto](#estrutura-do-projeto)  | [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias)  |  [Features](#features-implementadas)  |
+:-------:                  | ------:                                        |:-------:                 | ------:                             | ------:
+
+## Screenshots
+
+### Web
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/30422190/108910641-e8a4e700-7604-11eb-83fa-3fafeeee433c.png">
+</p>
 
 
-## 🚀 Getting started
+## Como Usar 👨‍💻️ :
 
-The best way to start with this template is using `create-next-app`.
+```shell
+git clone git@github.com:jjunior96/move-it.git
+cd move-it
 
+
+#Iniciando o Web localhost:3000
+cd web
+yarn install
+yarn start
 ```
-npx create-next-app project-name -e https://github.com/jjunior96/next-template
-```
 
-If you prefer you can clone this repository and run the following commands inside the project folder:
+## :rocket: Tecnologias
 
-1. `npm install` or `yarn`;
-2. `yarn dev`;
+- 🏗️ Frontend (Web):
+  - ReacJS;
+  - Next.js;
+  - Styled Components
 
-To view the project open `http://localhost:3000`.
+## Features Implementadas
 
-## 🤝 Contributing
-
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-new-feature`;
-3. Commit your changes: `git commit -m 'Add some feature'`;
-4. Push to the branch: `git push origin my-new-feature`.
-
-**After your pull request is merged**, you can safely delete your branch.
-
-
----
-
-Made with ♥ by Junior Alves
+- Frontend:
+  - [x] Criação de classes (Professor/aula/horários disponíveis);
+  - [x] Listagem de classes;
+  - [x] Criador de Conexões;
+  - [x] Listagem de conexões.
