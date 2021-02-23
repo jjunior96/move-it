@@ -1,6 +1,7 @@
 {
   "name": "move-it",
   "version": "0.1.0",
+  "license": "public",
   "author": "Junior Alves <jjalves96@gmail.com>",
   "scripts": {
     "dev": "next dev",
