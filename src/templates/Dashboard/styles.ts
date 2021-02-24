@@ -16,6 +16,12 @@ export const Content = styled.section`
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
   align-content: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    margin-top: 4rem;
+  }
 `;
 
 export const ContentLeft = styled.div``;
