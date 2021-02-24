@@ -3,7 +3,7 @@ import { createContext, useState, ReactNode } from 'react';
 import challenges from '../../challenges.json';
 
 interface Challenge {
-  type: 'body' | 'eye';
+  type: string;
   description: string;
   amount: number;
 }
@@ -12,7 +12,7 @@ interface ChallengesContextData {
   level: number;
   currentXP: number;
   challengesCompleted: number;
-  activeChallenge: Challenge;
+  activeChallenge: Challenge | null;
   xpToNextLevel: number;
   levelUp: () => void;
   startNewChallenge: () => void;
@@ -30,7 +30,9 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
   const [currentXP, setCurrentXP] = useState(0);
   const [challengesCompleted, setChallengesCompleted] = useState(0);
 
-  const [activeChallenge, setActiveChallenge] = useState(null);
+  const [activeChallenge, setActiveChallenge] = useState<Challenge | null>(
+    null
+  );
 
   const xpToNextLevel = Math.pow((level + 1) * 4, 2);
 
