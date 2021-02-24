@@ -17,8 +17,8 @@
 
 <h1 align="center">Índice</h1>
 
-[Screenshots](#screenshots)  | [Estrutura de Projeto](#estrutura-do-projeto)  | [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias)  |  [Features](#features-implementadas)  |  [Deploy](#deploy)
-:-------:                  | ------:                                        |:-------:                 | ------:                             | ------:                               | ------:
+[Screenshots](#screenshots)  | [Como Usar](#como-usar)  | [Tecnologias](#rocket-tecnologias)  |  [Features](#features-implementadas)  |  [Deploy](#deploy)
+:-------:                                                         |:-------:                 | ------:                             | ------:                               | ------:
 
 ## Screenshots
 
