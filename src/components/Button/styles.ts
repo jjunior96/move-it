@@ -3,10 +3,12 @@ import { shade } from 'polished';
 
 interface ContainerProps {
   isActive: boolean;
+  isFailed: boolean;
+  isSucceeded: boolean;
 }
 
 export const Container = styled.button<ContainerProps>`
-  ${({ theme, isActive, disabled }) => css`
+  ${({ theme, isActive, isFailed, isSucceeded, disabled }) => css`
     background: ${theme.colors.blue};
     border-radius: 6px;
     border: 0;
@@ -21,6 +23,29 @@ export const Container = styled.button<ContainerProps>`
     &:not(:disabled):hover {
       background-color: ${shade(0.2, theme.colors.blue)};
     }
+
+    ${isFailed &&
+    css`
+      background-color: ${theme.colors.red};
+      color: ${theme.colors.white};
+      height: 4.4rem;
+
+      &:not(:disabled):hover {
+        background-color: ${shade(0.2, theme.colors.red)};
+        color: ${theme.colors.white};
+      }
+    `}
+
+    ${isSucceeded &&
+    css`
+      background-color: ${theme.colors.green};
+      color: ${theme.colors.white};
+      height: 4.4rem;
+
+      &:not(:disabled):hover {
+        background-color: ${shade(0.2, theme.colors.green)};
+      }
+    `}
 
     ${isActive &&
     css`
