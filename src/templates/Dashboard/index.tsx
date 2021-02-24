@@ -1,6 +1,7 @@
 import Profile from 'components/Profile';
 import ExperienceBar from 'components/ExperienceBar';
 import CompleteChallenges from 'components/CompleteChallenges';
+import ChallengeBox from 'components/ChallengeBox';
 import Countdown from 'components/Countdown';
 
 import * as S from './styles';
@@ -19,11 +20,7 @@ const Dashboard: React.FC = () => {
           <Countdown />
         </S.ContentLeft>
 
-        <S.ContentRight>
-          <S.ContentRightTitle>
-            Inicie um ciclo para receber desafios
-          </S.ContentRightTitle>
-        </S.ContentRight>
+        <ChallengeBox />
       </S.Content>
     </S.Container>
   );
