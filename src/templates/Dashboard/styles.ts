@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -29,27 +29,3 @@ export const Line = styled.div`
     margin-bottom: 0;
   }
 `;
-
-export const ContentRight = styled.div`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.white};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    box-shadow: ${theme.box.shadow};
-  `}
-`;
-
-export const ContentRightTitle = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.text};
-    font-size: ${theme.font.sizes.xxlarge};
-    line-height: 3rem;
-    max-width: 25rem;
-    text-align: center;
-  `}
-`;
-
-export const ContentRightText = styled.div``;

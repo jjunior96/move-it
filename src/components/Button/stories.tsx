@@ -9,7 +9,11 @@ export default {
   }
 } as Meta;
 
-export const Basic: Story = (args) => <Button {...args}>{}</Button>;
+export const Basic: Story = (args) => (
+  <Button isActive={true} {...args}>
+    {}
+  </Button>
+);
 Basic.args = {
   children: 'Entrar'
 };
