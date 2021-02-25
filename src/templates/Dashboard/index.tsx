@@ -5,23 +5,26 @@ import ChallengeBox from 'components/ChallengeBox';
 import Countdown from 'components/Countdown';
 
 import * as S from './styles';
+import { CountdownContextProvider } from 'contexts/CountdownContext';
 
 const Dashboard: React.FC = () => {
   return (
     <S.Container>
       <ExperienceBar />
-      <S.Content>
-        <S.ContentLeft>
-          <Profile />
-          <S.Line>
-            <CompleteChallenges />
-          </S.Line>
+      <CountdownContextProvider>
+        <S.Content>
+          <S.ContentLeft>
+            <Profile />
+            <S.Line>
+              <CompleteChallenges />
+            </S.Line>
 
-          <Countdown />
-        </S.ContentLeft>
+            <Countdown />
+          </S.ContentLeft>
 
-        <ChallengeBox />
-      </S.Content>
+          <ChallengeBox />
+        </S.Content>
+      </CountdownContextProvider>
     </S.Container>
   );
 };

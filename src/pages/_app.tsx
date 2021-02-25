@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>App Name</title>
+        <title>Move it</title>
       </Head>
       <ChallengesProvider>
         <Component {...pageProps} />
