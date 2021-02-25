@@ -1,8 +1,13 @@
+import { useContext } from 'react';
 import Image from 'next/image';
+
+import { ChallengesContext } from 'contexts/ChallengesContext';
 
 import * as S from './styles';
 
 const Perfil = () => {
+  const { level } = useContext(ChallengesContext);
+
   return (
     <S.Container>
       <S.Photo src="https://github.com/jjunior96.png" alt="Junior Alves" />
@@ -15,7 +20,7 @@ const Perfil = () => {
             width={100}
             height={100}
           />
-          <S.LevelText>Level 1</S.LevelText>
+          <S.LevelText>Level {level}</S.LevelText>
         </S.LevelContainer>
       </S.Content>
     </S.Container>
