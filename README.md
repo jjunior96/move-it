@@ -55,9 +55,9 @@ yarn start
 - Frontend:
   - [x] Criação dos componentes base
   - [x] Criação do Countdown;
-  - [ ] Criação do Dark Mode;
-  - [ ] Criação da contagem de XP;
+  - [x] Criação da contagem de XP;
   - [X] Deploy;
+  - [ ] Criação do Dark Mode;
 
 ## Deploy
 A aplicação está disponível no endereço [https://move-it-app.vercel.app/](https://move-it-app.vercel.app/).
